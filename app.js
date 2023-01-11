@@ -11,6 +11,12 @@
 // });
 
 // 下から上にスライドさせる（隠す）
+// $(function(){
+//   $('.box1').slideUp();
+// });
+
+// 非表示の要素を、jQueryで表示させる
 $(function(){
-  $('.box1').slideUp();
+  $('.box1').show();
+  $('.box1').css({'background-color': '#000'});
 });
