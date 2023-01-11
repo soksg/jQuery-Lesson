@@ -26,13 +26,21 @@
 //   $('.box1').hide();
 // })
 
+// スライドを往復し、色を変える
+// $(function(){
+//   $('.box1').slideDown(function(){
+//     $('.box1').css({
+//       'background-color': '#777',
+//       'width': '200px',
+//       'height': '100px'
+//       // 引数に数字を入れることで、時間を指定可能（ミリ秒なので、1000で１秒）
+//     }).slideUp(3000);
+//   });
+// });
+
+// マウスオーバーした際、色を変化させる。
 $(function(){
-  $('.box1').slideDown(function(){
-    $('.box1').css({
-      'background-color': '#777',
-      'width': '200px',
-      'height': '100px'
-      // 引数に数字を入れることで、時間を指定可能（ミリ秒なので、1000で１秒）
-    }).slideUp(3000);
+  $(".box1").mouseover(function(){
+    $(".box1").css({"background-color": "#a9f"});
   });
 });
