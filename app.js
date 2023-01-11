@@ -45,11 +45,31 @@
 // });
 
 // マウスオーバーした際、色を変化させる。
+// $(function(){
+//   $(".box1").mouseover(function(){
+//     $(".box1").css({"background-color": "#a9f"});
+//   });
+//   $(".box1").mouseout(function(){
+//     $(".box1").css({"background-color": "#f00"});
+//   });
+// });
+
+// クラス属性の定義を追加・解除
+// $(function(){
+//   $(".box1").mouseover(function(){
+//     $(".box1").addClass("box1-ext");
+//   });
+//   $(".box1").mouseout(function(){
+//     $(".box1").removeClass("box1-ext");
+//   });
+// });
+
+// マウスクリックイベントの設定
 $(function(){
-  $(".box1").mouseover(function(){
-    $(".box1").css({"background-color": "#a9f"});
+  $(".box1").on("click",function(){
+    $(".box1").addClass("box1-ext");
   });
   $(".box1").mouseout(function(){
-    $(".box1").css({"background-color": "#f00"});
+    $(".box1").removeClass("box1-ext");
   });
 });
