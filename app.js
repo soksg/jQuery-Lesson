@@ -38,9 +38,18 @@
 //   });
 // });
 
+
+// 【イベントの記述】
+// $('.セレクタ名').イベント名(function(){
+//   イベント発生時に行われる処理
+// });
+
 // マウスオーバーした際、色を変化させる。
 $(function(){
   $(".box1").mouseover(function(){
     $(".box1").css({"background-color": "#a9f"});
+  });
+  $(".box1").mouseout(function(){
+    $(".box1").css({"background-color": "#f00"});
   });
 });
