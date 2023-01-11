@@ -22,6 +22,17 @@
 // });
 
 // 表示されている要素を、jQueryで非表示にする
+// $(function(){
+//   $('.box1').hide();
+// })
+
 $(function(){
-  $('.box1').hide();
-})
+  $('.box1').slideDown(function(){
+    $('.box1').css({
+      'background-color': '#777',
+      'width': '200px',
+      'height': '100px'
+      // 引数に数字を入れることで、時間を指定可能（ミリ秒なので、1000で１秒）
+    }).slideUp(3000);
+  });
+});
