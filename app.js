@@ -16,7 +16,12 @@
 // });
 
 // 非表示の要素を、jQueryで表示させる
+// $(function(){
+//   $('.box1').show();
+//   $('.box1').css({'background-color': '#000'});
+// });
+
+// 表示されている要素を、jQueryで非表示にする
 $(function(){
-  $('.box1').show();
-  $('.box1').css({'background-color': '#000'});
-});
+  $('.box1').hide();
+})
